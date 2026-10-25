@@ -1,0 +1,111 @@
+<!doctype html><html lang="uz"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#10251f"><meta name="description" content="YASHIRIN.UZ — O‘zbekistonning yashirin maskanlari, yangi iste’dodlari va boshqa kashfiyotlar."><title>YASHIRIN.UZ — Kategoriyalar</title><link rel="icon" href="logo.png"><style>
+:root{--bg:#0b1412;--panel:#13211d;--panel2:#192b25;--text:#f5f4ec;--muted:#b4c2b8;--accent:#d9b56d;--line:#294138}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:rgba(11,20,18,.91);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:850;letter-spacing:.11em}.brand img{width:42px;height:42px;object-fit:contain;border-radius:12px}
+.navlinks{display:flex;gap:24px;color:var(--muted);font-size:14px}.navlinks a:hover{color:var(--accent)}
+.lang{background:var(--panel2);border:1px solid var(--line);color:var(--text);border-radius:99px;padding:9px 12px}
+.hero{padding:78px 0 60px;background:radial-gradient(ellipse at 80% 10%,#28493a 0%,transparent 45%),linear-gradient(140deg,#10251f,#0b1412 65%)}
+.eyebrow{color:var(--accent);font-size:12px;letter-spacing:.2em;text-transform:uppercase;font-weight:750}
+h1{font-size:clamp(42px,7vw,76px);line-height:.98;letter-spacing:-.055em;max-width:850px;margin:18px 0}
+.hero p{color:var(--muted);font-size:18px;line-height:1.7;max-width:650px}
+.searchrow{display:flex;gap:10px;max-width:680px;margin-top:28px}.searchrow input{flex:1;min-width:0;background:#f5f4ec;color:#17231e;border:0;border-radius:12px;padding:16px;font-size:15px}
+button,.button{border:0;border-radius:12px;padding:13px 17px;background:var(--accent);color:#18231d;font-weight:800;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:8px}
+.button.secondary,button.secondary{background:transparent;color:var(--text);border:1px solid var(--line)}
+.herofoot{display:flex;gap:24px;flex-wrap:wrap;margin-top:30px;color:var(--muted);font-size:13px}.herofoot span:before{content:"✦";color:var(--accent);margin-right:8px}
+section{padding:56px 0}.sectionhead{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:24px}.sectionhead h2{font-size:clamp(26px,4vw,38px);letter-spacing:-.035em;margin:8px 0}.sectionhead p{color:var(--muted);margin:0;max-width:480px;line-height:1.6}
+.chips{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0 28px}.chip{border:1px solid var(--line);border-radius:99px;padding:10px 15px;color:var(--muted);background:transparent;cursor:pointer}.chip.active,.chip:hover{background:var(--panel2);border-color:var(--accent);color:var(--text)}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.place{background:var(--panel);border:1px solid var(--line);border-radius:18px;overflow:hidden;transition:transform .2s,border-color .2s;display:flex;flex-direction:column}.place:hover{transform:translateY(-3px);border-color:#567263}
+.photo{height:190px;background:linear-gradient(135deg,#29483a,#6b7658);position:relative;overflow:hidden}.photo img{width:100%;height:100%;object-fit:cover;display:block}.tag{position:absolute;left:14px;top:14px;background:rgba(8,17,14,.84);border:1px solid #52695a;border-radius:99px;padding:7px 10px;font-size:11px}
+.placebody{padding:18px;display:flex;flex-direction:column;flex:1}.placebody h3{margin:0 0 8px;font-size:20px}.placebody p{color:var(--muted);font-size:14px;line-height:1.6;margin:0 0 15px}.meta{font-size:12px;color:var(--accent);display:flex;gap:12px;flex-wrap:wrap;margin-bottom:16px}.card-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto}.card-actions button,.card-actions a{font-size:12px;padding:10px 12px}
+.regions{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.region{padding:16px;background:var(--panel);border:1px solid var(--line);border-radius:12px;color:var(--muted);font-size:14px}.region:hover{border-color:var(--accent);color:var(--text)}
+.callout{padding:30px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(130deg,#172a22,#101b17);display:flex;align-items:center;justify-content:space-between;gap:24px}.callout h2{margin:0 0 8px}.callout p{color:var(--muted);margin:0;line-height:1.6}
+.suggest-layout{display:grid;grid-template-columns:.82fr 1.18fr;gap:28px;align-items:stretch}.suggest-note{padding:30px;border:1px solid var(--line);border-radius:22px;background:radial-gradient(ellipse at 15% 0%,#2a4938 0%,transparent 55%),linear-gradient(150deg,#172a22,#101916);display:flex;flex-direction:column;justify-content:space-between;min-height:100%}.suggest-note h3{font-size:clamp(25px,3vw,34px);line-height:1.12;letter-spacing:-.04em;margin:16px 0}.suggest-note p{color:var(--muted);line-height:1.8}.suggest-mark{font-size:44px;color:var(--accent);line-height:1}.suggest-small{font-size:12px!important;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)!important}.suggest-form{padding:28px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(145deg,#172620,#101916);box-shadow:0 18px 60px #0002}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.field{display:flex;flex-direction:column;gap:8px}.field.full{grid-column:1/-1}.field label{font-size:13px;font-weight:700;color:#e7e9df}.field label span{color:var(--accent)}.field input,.field textarea,.field select{width:100%;background:#0c1713;border:1px solid #30473c;border-radius:12px;padding:14px 15px;color:var(--text);font:inherit;outline:none;transition:border-color .2s,box-shadow .2s}.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--accent);box-shadow:0 0 0 3px #d9b56d1c}.field textarea{min-height:108px;resize:vertical}.field input::placeholder,.field textarea::placeholder{color:#77877d}.form-foot{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:22px}.form-foot small{max-width:270px;color:var(--muted);font-size:12px;line-height:1.6}.form-submit{padding:15px 20px;min-width:170px}.form-status{display:none;margin-top:16px;padding:13px 15px;border:1px solid var(--line);border-radius:12px;color:var(--muted);font-size:14px;line-height:1.6}.form-status.show{display:block}.form-status.success{border-color:#527c5d;color:#c9e8ce}.form-status.error{border-color:#946a4d;color:#f2c8a9}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:13px}.footerinner{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.notice{color:var(--muted);font-size:12px;line-height:1.6;margin-top:20px}
+dialog{width:min(760px,92vw);max-height:88vh;overflow:auto;background:var(--panel);color:var(--text);border:1px solid var(--line);border-radius:20px;padding:0;box-shadow:0 24px 100px #000b}dialog::backdrop{background:#000b;backdrop-filter:blur(4px)}.guide-head{padding:24px 26px;background:linear-gradient(135deg,#203a2d,#13211d);border-bottom:1px solid var(--line)}.guide-head h2{margin:8px 0;font-size:30px}.guide-content{padding:24px 26px}.guide-content p,.guide-content li{color:var(--muted);line-height:1.7}.guide-facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:18px 0}.fact{padding:14px;border:1px solid var(--line);border-radius:12px;background:#0d1915}.fact small{display:block;color:var(--accent);text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px}.guide-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}.close-row{display:flex;justify-content:flex-end;padding:0 26px 24px}
+@media(max-width:760px){.navlinks{display:none}.hero{padding:58px 0 44px}.grid{grid-template-columns:1fr 1fr}.regions{grid-template-columns:repeat(2,minmax(0,1fr))}.photo{height:150px}.callout{align-items:flex-start;flex-direction:column}.sectionhead{align-items:flex-start;flex-direction:column}.suggest-layout{grid-template-columns:1fr}.suggest-note{min-height:240px}}
+@media(max-width:480px){.grid{grid-template-columns:1fr}.photo{height:200px}.searchrow{flex-direction:column}.searchrow button{width:100%}.guide-facts{grid-template-columns:1fr}.guide-head,.guide-content{padding:20px}.close-row{padding:0 20px 20px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.suggest-form,.suggest-note{padding:21px}.form-foot{align-items:stretch;flex-direction:column}.form-submit{width:100%}}
+
+/* YASHIRIN.UZ visual refresh — keeps the existing content and form connection */
+:root{--bg:#07100f;--panel:#101d19;--panel2:#172a23;--text:#f7f6ef;--muted:#b9c7be;--accent:#dfbd78;--line:#2a4237}
+body{background:radial-gradient(ellipse at 50% -15%,#1b3529 0%,transparent 48%),var(--bg)}
+header{background:rgba(7,16,15,.82);border-bottom-color:rgba(223,189,120,.18)}
+nav{min-height:82px}
+.brand{font-size:15px;letter-spacing:.14em}
+.brand img{width:46px;height:46px;border-radius:50%;background:rgba(255,255,255,.04);padding:3px}
+.navlinks{gap:28px;font-weight:550}
+.navlinks a{transition:color .2s}
+.lang{cursor:pointer;border-color:#3a5145}
+.hero{position:relative;isolation:isolate;overflow:hidden;padding:100px 0 76px;min-height:560px;background:linear-gradient(90deg,#07100f 0%,rgba(7,16,15,.96) 32%,rgba(7,16,15,.72) 57%,rgba(7,16,15,.38) 100%),radial-gradient(ellipse at 78% 30%,#294b39 0%,transparent 48%),#07100f}
+.hero:before{content:"";position:absolute;z-index:-1;inset:0 0 0 38%;background-image:url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1800&q=85");background-size:cover;background-position:center 48%;opacity:.72;mask-image:linear-gradient(90deg,transparent 0%,#000 25%,#000 100%)}
+.hero:after{content:"";position:absolute;z-index:-1;inset:auto 0 0;height:150px;background:linear-gradient(transparent,var(--bg))}
+.hero .wrap{position:relative}
+.eyebrow{font-size:11px;letter-spacing:.23em}
+h1{max-width:760px;font-size:clamp(44px,6.5vw,78px);line-height:1.01;letter-spacing:-.06em;text-wrap:balance}
+.hero p{max-width:570px;font-size:17px;line-height:1.8}
+.searchrow{max-width:650px}
+.searchrow input{background:rgba(248,248,239,.96);box-shadow:0 12px 35px #0002}
+button,.button{transition:transform .18s,background .18s,border-color .18s,box-shadow .18s}
+button:hover,.button:hover{transform:translateY(-2px);box-shadow:0 8px 24px #0003}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+section{padding:76px 0}
+#explore{background:linear-gradient(180deg,var(--bg),#0b1713 45%,var(--bg))}
+.sectionhead{margin-bottom:30px}
+.sectionhead h2{font-size:clamp(28px,4vw,42px);line-height:1.1}
+.chips{gap:9px;margin:24px 0 30px}
+.chip{padding:11px 17px;transition:all .2s}
+.grid{gap:20px}
+.place{border-color:#263d32;border-radius:20px;background:linear-gradient(160deg,#14231d,#0d1713);box-shadow:0 12px 35px #0002}
+.place:hover{transform:translateY(-5px);border-color:#7b704e;box-shadow:0 18px 45px #0004}
+.photo{height:210px;background:#20372b}
+.photo:after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(transparent,rgba(7,16,15,.3));pointer-events:none}
+.photo img{transition:transform .55s}
+.place:hover .photo img{transform:scale(1.045)}
+.tag{backdrop-filter:blur(10px);border-color:#ffffff2b}
+.placebody{padding:21px}
+.placebody h3{letter-spacing:-.025em}
+.card-actions .button.secondary{border-color:#3b5145}
+.regions{gap:12px}
+.region{border-radius:14px;background:linear-gradient(145deg,#14231d,#0c1713);transition:transform .2s,border-color .2s}
+.region:hover{transform:translateY(-2px)}
+.callout,.suggest-note,.suggest-form{box-shadow:0 18px 55px #0002}
+.suggest-layout{gap:22px}
+.suggest-note,.suggest-form{border-color:#30483a}
+.field input,.field textarea,.field select{transition:border-color .2s,box-shadow .2s,background .2s}
+.field input:hover,.field textarea:hover,.field select:hover{border-color:#506c59}
+.form-submit{box-shadow:0 8px 22px #dfbd7818}
+footer{background:#060d0c;border-top-color:#263b31;padding:32px 0}
+dialog{box-shadow:0 28px 100px #000c}
+@media(max-width:760px){
+ .hero{padding:72px 0 54px;min-height:auto;background:linear-gradient(90deg,rgba(7,16,15,.94),rgba(7,16,15,.77)),#07100f}
+ .hero:before{inset:0 0 0 0;opacity:.48;mask-image:linear-gradient(180deg,#000 0%,transparent 100%)}
+ .hero h1{max-width:650px}
+ section{padding:58px 0}
+ .photo{height:170px}
+}
+@media(max-width:480px){
+ nav{min-height:70px}
+ .brand{font-size:13px;letter-spacing:.1em}
+ .brand img{width:38px;height:38px}
+ .hero{padding:60px 0 44px}
+ h1{font-size:clamp(40px,12vw,56px)}
+ .hero p{font-size:16px}
+ .photo{height:205px}
+}
+
+
+/* Community catalogs: places + talent */
+.talent-card .photo{height:190px}.talent-card .skill-pill{display:inline-flex;border:1px solid #6b6043;color:var(--accent);border-radius:99px;padding:6px 10px;font-size:11px;margin-bottom:12px;width:max-content}.talent-card .placebody p{white-space:pre-line}.catalog-empty{grid-column:1/-1;color:var(--muted);padding:20px;border:1px dashed var(--line);border-radius:14px}
+
+
+.category-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:32px}.category-card{min-height:300px;display:flex;flex-direction:column;justify-content:space-between;padding:28px;border:1px solid #30483a;border-radius:22px;background:linear-gradient(145deg,#14251d,#0b1511);box-shadow:0 18px 55px #0002;transition:transform .2s,border-color .2s}.category-card:hover{transform:translateY(-5px);border-color:var(--accent)}.category-icon{font-size:34px;margin-bottom:22px}.category-card h2{font-size:clamp(26px,4vw,38px);letter-spacing:-.04em;margin:0 0 12px}.category-card p{color:var(--muted);line-height:1.7;max-width:480px}.category-link{display:flex;justify-content:space-between;align-items:center;margin-top:25px;color:var(--accent);font-weight:800}.future-card{opacity:.72;border-style:dashed}@media(max-width:650px){.category-grid{grid-template-columns:1fr}.category-card{min-height:250px;padding:23px}}
+</style></head><body><header><div class="wrap"><nav><a class="brand" href="index.html"><img src="logo.png" alt="YASHIRIN.UZ logo" onerror="this.style.display='none'"><span>YASHIRIN.UZ</span></a><div class="navlinks"><a href="index.html" data-en="Categories" data-uz="Kategoriyalar">Kategoriyalar</a><a href="joylar.html" data-en="Hidden places" data-uz="Yashirin maskanlar">Yashirin maskanlar</a><a href="istedodlar.html" data-en="New talents" data-uz="Yangi iste’dodlar">Yangi iste’dodlar</a></div><select class="lang" id="language" aria-label="Language"><option value="uz">UZ</option><option value="en">EN</option></select></nav></div></header>
+<main><section class="hero"><div class="wrap"><div class="eyebrow" data-en="Explore beyond the obvious" data-uz="Odatdagidan tashqarini kashf eting">Odatdagidan tashqarini kashf eting</div><h1 data-en="Discover Uzbekistan, one category at a time." data-uz="O‘zbekistonni kategoriya-kategoriya kashf eting.">O‘zbekistonni kategoriya-kategoriya kashf eting.</h1><p data-en="A growing directory of places, people and local discoveries. Choose a category to open its own dedicated page." data-uz="Maskanlar, insonlar va mahalliy kashfiyotlar katalogi. Har bir kategoriya o‘zining alohida sahifasiga ega.">Maskanlar, insonlar va mahalliy kashfiyotlar katalogi. Har bir kategoriya o‘zining alohida sahifasiga ega.</p><div class="herofoot"><span data-en="Separate pages for every category" data-uz="Har bir kategoriya uchun alohida sahifa">Har bir kategoriya uchun alohida sahifa</span><span data-en="More categories can be added later" data-uz="Keyin yangi kategoriyalar qo‘shish mumkin">Keyin yangi kategoriyalar qo‘shish mumkin</span><span data-en="Free to explore" data-uz="Bepul foydalaning">Bepul foydalaning</span></div></div></section>
+<section><div class="wrap"><div class="sectionhead"><div><div class="eyebrow" data-en="Browse collections" data-uz="Bo‘limlarni ko‘rish">Bo‘limlarni ko‘rish</div><h2 data-en="Choose what to discover" data-uz="Nimani kashf etishni tanlang">Nimani kashf etishni tanlang</h2></div><p data-en="Each collection opens as a separate page, so it can grow independently as the project expands." data-uz="Har bir bo‘lim alohida sahifada ochiladi. Loyiha kengaygani sari ularni mustaqil rivojlantirish mumkin.">Har bir bo‘lim alohida sahifada ochiladi. Loyiha kengaygani sari ularni mustaqil rivojlantirish mumkin.</p></div>
+<div class="category-grid"><a class="category-card" href="joylar.html"><div><div class="category-icon">⌖</div><div class="eyebrow" data-en="Travel & discovery" data-uz="Sayohat va kashfiyot">Sayohat va kashfiyot</div><h2 data-en="Hidden places" data-uz="Yashirin maskanlar">Yashirin maskanlar</h2><p data-en="Explore lesser-known destinations, natural wonders, historic corners and local travel tips across Uzbekistan." data-uz="O‘zbekiston bo‘ylab kam tanilgan maskanlar, tabiat mo‘jizalari, tarixiy joylar va mahalliy sayohat maslahatlarini kashf eting.">O‘zbekiston bo‘ylab kam tanilgan maskanlar, tabiat mo‘jizalari, tarixiy joylar va mahalliy sayohat maslahatlarini kashf eting.</p></div><div class="category-link"><span data-en="Open collection" data-uz="Bo‘limni ochish">Bo‘limni ochish</span><span>↗</span></div></a>
+<a class="category-card" href="istedodlar.html"><div><div class="category-icon">✳</div><div class="eyebrow" data-en="People & creativity" data-uz="Insonlar va ijod">Insonlar va ijod</div><h2 data-en="New talents" data-uz="Yangi iste’dodlar">Yangi iste’dodlar</h2><p data-en="Meet talented people, creators and professionals. Explore their skills, stories and portfolios." data-uz="Iste’dodli insonlar, ijodkorlar va mutaxassislar bilan tanishing. Ularning mahorati, hikoyalari va portfoliolarini ko‘ring.">Iste’dodli insonlar, ijodkorlar va mutaxassislar bilan tanishing. Ularning mahorati, hikoyalari va portfoliolarini ko‘ring.</p></div><div class="category-link"><span data-en="Open collection" data-uz="Bo‘limni ochish">Bo‘limni ochish</span><span>↗</span></div></a>
+<div class="category-card future-card"><div><div class="category-icon">＋</div><div class="eyebrow" data-en="Coming as the directory grows" data-uz="Katalog kengaygani sari">Katalog kengaygani sari</div><h2 data-en="More categories" data-uz="Yangi kategoriyalar">Yangi kategoriyalar</h2><p data-en="Food, local businesses, events, crafts, experiences and other collections can each get their own page." data-uz="Taomlar, mahalliy bizneslar, tadbirlar, hunarmandchilik, tajribalar va boshqa bo‘limlarga ham alohida sahifa qo‘shish mumkin.">Taomlar, mahalliy bizneslar, tadbirlar, hunarmandchilik, tajribalar va boshqa bo‘limlarga ham alohida sahifa qo‘shish mumkin.</p></div><div class="category-link"><span data-en="Expandable structure" data-uz="Kengaytirish mumkin">Kengaytirish mumkin</span><span>✦</span></div></div></div></div></section></main>
+<footer><div class="wrap footerinner"><span>© <span id="year"></span> YASHIRIN.UZ</span><span data-en="Discover people and places worth knowing." data-uz="Bilishga arziydigan insonlar va maskanlarni kashf eting.">Bilishga arziydigan insonlar va maskanlarni kashf eting.</span></div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();document.getElementById('language').addEventListener('change',e=>{const lang=e.target.value;document.documentElement.lang=lang;document.querySelectorAll('[data-uz][data-en]').forEach(el=>el.textContent=el.dataset[lang]||el.dataset.uz)});</script></body></html>

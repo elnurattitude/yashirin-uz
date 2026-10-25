@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="YASHIRIN.UZ — O‘zbekiston bo‘ylab sayohat qo‘llanmalari: manzillar, mavsum, safar va xarita havolalari.">
+<meta name="theme-color" content="#10251f">
+<meta property="og:title" content="YASHIRIN.UZ — Discover Uzbekistan">
+<meta property="og:description" content="Discover the places most people miss in Uzbekistan.">
+<title>YASHIRIN.UZ — Yashirin maskanlar</title>
+<link rel="icon" href="logo.png">
+<style>
+:root{--bg:#0b1412;--panel:#13211d;--panel2:#192b25;--text:#f5f4ec;--muted:#b4c2b8;--accent:#d9b56d;--line:#294138}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:rgba(11,20,18,.91);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:850;letter-spacing:.11em}.brand img{width:42px;height:42px;object-fit:contain;border-radius:12px}
+.navlinks{display:flex;gap:24px;color:var(--muted);font-size:14px}.navlinks a:hover{color:var(--accent)}
+.lang{background:var(--panel2);border:1px solid var(--line);color:var(--text);border-radius:99px;padding:9px 12px}
+.hero{padding:78px 0 60px;background:radial-gradient(ellipse at 80% 10%,#28493a 0%,transparent 45%),linear-gradient(140deg,#10251f,#0b1412 65%)}
+.eyebrow{color:var(--accent);font-size:12px;letter-spacing:.2em;text-transform:uppercase;font-weight:750}
+h1{font-size:clamp(42px,7vw,76px);line-height:.98;letter-spacing:-.055em;max-width:850px;margin:18px 0}
+.hero p{color:var(--muted);font-size:18px;line-height:1.7;max-width:650px}
+.searchrow{display:flex;gap:10px;max-width:680px;margin-top:28px}.searchrow input{flex:1;min-width:0;background:#f5f4ec;color:#17231e;border:0;border-radius:12px;padding:16px;font-size:15px}
+button,.button{border:0;border-radius:12px;padding:13px 17px;background:var(--accent);color:#18231d;font-weight:800;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:8px}
+.button.secondary,button.secondary{background:transparent;color:var(--text);border:1px solid var(--line)}
+.herofoot{display:flex;gap:24px;flex-wrap:wrap;margin-top:30px;color:var(--muted);font-size:13px}.herofoot span:before{content:"✦";color:var(--accent);margin-right:8px}
+section{padding:56px 0}.sectionhead{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:24px}.sectionhead h2{font-size:clamp(26px,4vw,38px);letter-spacing:-.035em;margin:8px 0}.sectionhead p{color:var(--muted);margin:0;max-width:480px;line-height:1.6}
+.chips{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0 28px}.chip{border:1px solid var(--line);border-radius:99px;padding:10px 15px;color:var(--muted);background:transparent;cursor:pointer}.chip.active,.chip:hover{background:var(--panel2);border-color:var(--accent);color:var(--text)}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.place{background:var(--panel);border:1px solid var(--line);border-radius:18px;overflow:hidden;transition:transform .2s,border-color .2s;display:flex;flex-direction:column}.place:hover{transform:translateY(-3px);border-color:#567263}
+.photo{height:190px;background:linear-gradient(135deg,#29483a,#6b7658);position:relative;overflow:hidden}.photo img{width:100%;height:100%;object-fit:cover;display:block}.tag{position:absolute;left:14px;top:14px;background:rgba(8,17,14,.84);border:1px solid #52695a;border-radius:99px;padding:7px 10px;font-size:11px}
+.placebody{padding:18px;display:flex;flex-direction:column;flex:1}.placebody h3{margin:0 0 8px;font-size:20px}.placebody p{color:var(--muted);font-size:14px;line-height:1.6;margin:0 0 15px}.meta{font-size:12px;color:var(--accent);display:flex;gap:12px;flex-wrap:wrap;margin-bottom:16px}.card-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto}.card-actions button,.card-actions a{font-size:12px;padding:10px 12px}
+.regions{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.region{padding:16px;background:var(--panel);border:1px solid var(--line);border-radius:12px;color:var(--muted);font-size:14px}.region:hover{border-color:var(--accent);color:var(--text)}
+.callout{padding:30px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(130deg,#172a22,#101b17);display:flex;align-items:center;justify-content:space-between;gap:24px}.callout h2{margin:0 0 8px}.callout p{color:var(--muted);margin:0;line-height:1.6}
+.suggest-layout{display:grid;grid-template-columns:.82fr 1.18fr;gap:28px;align-items:stretch}.suggest-note{padding:30px;border:1px solid var(--line);border-radius:22px;background:radial-gradient(ellipse at 15% 0%,#2a4938 0%,transparent 55%),linear-gradient(150deg,#172a22,#101916);display:flex;flex-direction:column;justify-content:space-between;min-height:100%}.suggest-note h3{font-size:clamp(25px,3vw,34px);line-height:1.12;letter-spacing:-.04em;margin:16px 0}.suggest-note p{color:var(--muted);line-height:1.8}.suggest-mark{font-size:44px;color:var(--accent);line-height:1}.suggest-small{font-size:12px!important;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)!important}.suggest-form{padding:28px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(145deg,#172620,#101916);box-shadow:0 18px 60px #0002}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.field{display:flex;flex-direction:column;gap:8px}.field.full{grid-column:1/-1}.field label{font-size:13px;font-weight:700;color:#e7e9df}.field label span{color:var(--accent)}.field input,.field textarea,.field select{width:100%;background:#0c1713;border:1px solid #30473c;border-radius:12px;padding:14px 15px;color:var(--text);font:inherit;outline:none;transition:border-color .2s,box-shadow .2s}.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--accent);box-shadow:0 0 0 3px #d9b56d1c}.field textarea{min-height:108px;resize:vertical}.field input::placeholder,.field textarea::placeholder{color:#77877d}.form-foot{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:22px}.form-foot small{max-width:270px;color:var(--muted);font-size:12px;line-height:1.6}.form-submit{padding:15px 20px;min-width:170px}.form-status{display:none;margin-top:16px;padding:13px 15px;border:1px solid var(--line);border-radius:12px;color:var(--muted);font-size:14px;line-height:1.6}.form-status.show{display:block}.form-status.success{border-color:#527c5d;color:#c9e8ce}.form-status.error{border-color:#946a4d;color:#f2c8a9}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:13px}.footerinner{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.notice{color:var(--muted);font-size:12px;line-height:1.6;margin-top:20px}
+dialog{width:min(760px,92vw);max-height:88vh;overflow:auto;background:var(--panel);color:var(--text);border:1px solid var(--line);border-radius:20px;padding:0;box-shadow:0 24px 100px #000b}dialog::backdrop{background:#000b;backdrop-filter:blur(4px)}.guide-head{padding:24px 26px;background:linear-gradient(135deg,#203a2d,#13211d);border-bottom:1px solid var(--line)}.guide-head h2{margin:8px 0;font-size:30px}.guide-content{padding:24px 26px}.guide-content p,.guide-content li{color:var(--muted);line-height:1.7}.guide-facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:18px 0}.fact{padding:14px;border:1px solid var(--line);border-radius:12px;background:#0d1915}.fact small{display:block;color:var(--accent);text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px}.guide-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}.close-row{display:flex;justify-content:flex-end;padding:0 26px 24px}
+@media(max-width:760px){.navlinks{display:none}.hero{padding:58px 0 44px}.grid{grid-template-columns:1fr 1fr}.regions{grid-template-columns:repeat(2,minmax(0,1fr))}.photo{height:150px}.callout{align-items:flex-start;flex-direction:column}.sectionhead{align-items:flex-start;flex-direction:column}.suggest-layout{grid-template-columns:1fr}.suggest-note{min-height:240px}}
+@media(max-width:480px){.grid{grid-template-columns:1fr}.photo{height:200px}.searchrow{flex-direction:column}.searchrow button{width:100%}.guide-facts{grid-template-columns:1fr}.guide-head,.guide-content{padding:20px}.close-row{padding:0 20px 20px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.suggest-form,.suggest-note{padding:21px}.form-foot{align-items:stretch;flex-direction:column}.form-submit{width:100%}}
+
+/* YASHIRIN.UZ visual refresh — keeps the existing content and form connection */
+:root{--bg:#07100f;--panel:#101d19;--panel2:#172a23;--text:#f7f6ef;--muted:#b9c7be;--accent:#dfbd78;--line:#2a4237}
+body{background:radial-gradient(ellipse at 50% -15%,#1b3529 0%,transparent 48%),var(--bg)}
+header{background:rgba(7,16,15,.82);border-bottom-color:rgba(223,189,120,.18)}
+nav{min-height:82px}
+.brand{font-size:15px;letter-spacing:.14em}
+.brand img{width:46px;height:46px;border-radius:50%;background:rgba(255,255,255,.04);padding:3px}
+.navlinks{gap:28px;font-weight:550}
+.navlinks a{transition:color .2s}
+.lang{cursor:pointer;border-color:#3a5145}
+.hero{position:relative;isolation:isolate;overflow:hidden;padding:100px 0 76px;min-height:560px;background:linear-gradient(90deg,#07100f 0%,rgba(7,16,15,.96) 32%,rgba(7,16,15,.72) 57%,rgba(7,16,15,.38) 100%),radial-gradient(ellipse at 78% 30%,#294b39 0%,transparent 48%),#07100f}
+.hero:before{content:"";position:absolute;z-index:-1;inset:0 0 0 38%;background-image:url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1800&q=85");background-size:cover;background-position:center 48%;opacity:.72;mask-image:linear-gradient(90deg,transparent 0%,#000 25%,#000 100%)}
+.hero:after{content:"";position:absolute;z-index:-1;inset:auto 0 0;height:150px;background:linear-gradient(transparent,var(--bg))}
+.hero .wrap{position:relative}
+.eyebrow{font-size:11px;letter-spacing:.23em}
+h1{max-width:760px;font-size:clamp(44px,6.5vw,78px);line-height:1.01;letter-spacing:-.06em;text-wrap:balance}
+.hero p{max-width:570px;font-size:17px;line-height:1.8}
+.searchrow{max-width:650px}
+.searchrow input{background:rgba(248,248,239,.96);box-shadow:0 12px 35px #0002}
+button,.button{transition:transform .18s,background .18s,border-color .18s,box-shadow .18s}
+button:hover,.button:hover{transform:translateY(-2px);box-shadow:0 8px 24px #0003}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+section{padding:76px 0}
+#explore{background:linear-gradient(180deg,var(--bg),#0b1713 45%,var(--bg))}
+.sectionhead{margin-bottom:30px}
+.sectionhead h2{font-size:clamp(28px,4vw,42px);line-height:1.1}
+.chips{gap:9px;margin:24px 0 30px}
+.chip{padding:11px 17px;transition:all .2s}
+.grid{gap:20px}
+.place{border-color:#263d32;border-radius:20px;background:linear-gradient(160deg,#14231d,#0d1713);box-shadow:0 12px 35px #0002}
+.place:hover{transform:translateY(-5px);border-color:#7b704e;box-shadow:0 18px 45px #0004}
+.photo{height:210px;background:#20372b}
+.photo:after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(transparent,rgba(7,16,15,.3));pointer-events:none}
+.photo img{transition:transform .55s}
+.place:hover .photo img{transform:scale(1.045)}
+.tag{backdrop-filter:blur(10px);border-color:#ffffff2b}
+.placebody{padding:21px}
+.placebody h3{letter-spacing:-.025em}
+.card-actions .button.secondary{border-color:#3b5145}
+.regions{gap:12px}
+.region{border-radius:14px;background:linear-gradient(145deg,#14231d,#0c1713);transition:transform .2s,border-color .2s}
+.region:hover{transform:translateY(-2px)}
+.callout,.suggest-note,.suggest-form{box-shadow:0 18px 55px #0002}
+.suggest-layout{gap:22px}
+.suggest-note,.suggest-form{border-color:#30483a}
+.field input,.field textarea,.field select{transition:border-color .2s,box-shadow .2s,background .2s}
+.field input:hover,.field textarea:hover,.field select:hover{border-color:#506c59}
+.form-submit{box-shadow:0 8px 22px #dfbd7818}
+footer{background:#060d0c;border-top-color:#263b31;padding:32px 0}
+dialog{box-shadow:0 28px 100px #000c}
+@media(max-width:760px){
+ .hero{padding:72px 0 54px;min-height:auto;background:linear-gradient(90deg,rgba(7,16,15,.94),rgba(7,16,15,.77)),#07100f}
+ .hero:before{inset:0 0 0 0;opacity:.48;mask-image:linear-gradient(180deg,#000 0%,transparent 100%)}
+ .hero h1{max-width:650px}
+ section{padding:58px 0}
+ .photo{height:170px}
+}
+@media(max-width:480px){
+ nav{min-height:70px}
+ .brand{font-size:13px;letter-spacing:.1em}
+ .brand img{width:38px;height:38px}
+ .hero{padding:60px 0 44px}
+ h1{font-size:clamp(40px,12vw,56px)}
+ .hero p{font-size:16px}
+ .photo{height:205px}
+}
+
+
+/* Community catalogs: places + talent */
+.talent-card .photo{height:190px}.talent-card .skill-pill{display:inline-flex;border:1px solid #6b6043;color:var(--accent);border-radius:99px;padding:6px 10px;font-size:11px;margin-bottom:12px;width:max-content}.talent-card .placebody p{white-space:pre-line}.catalog-empty{grid-column:1/-1;color:var(--muted);padding:20px;border:1px dashed var(--line);border-radius:14px}
+
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+<a class="brand" href="index.html" aria-label="YASHIRIN.UZ home"><img src="logo.png" alt="YASHIRIN.UZ logo" onerror="this.style.display='none'"><span>YASHIRIN.UZ</span></a>
+<div class="navlinks"><a href="index.html" data-en="Categories" data-uz="Kategoriyalar">Kategoriyalar</a><a href="joylar.html" data-en="Hidden places" data-uz="Yashirin maskanlar">Yashirin maskanlar</a><a href="istedodlar.html" data-en="New talents" data-uz="Yangi iste’dodlar">Yangi iste’dodlar</a></div>
+<select class="lang" id="language" aria-label="Language"><option value="uz">UZ</option><option value="en">EN</option></select>
+</nav></div></header>
+<main>
+<section class="hero"><div class="wrap">
+<div class="eyebrow" data-en="A different side of Uzbekistan" data-uz="O‘zbekistonning boshqa bir qirrasi">O‘zbekistonning boshqa bir qirrasi</div>
+<h1 data-en="Discover the places most people miss." data-uz="Ko‘pchilik bilmaydigan joylarni kashf eting.">Ko‘pchilik bilmaydigan joylarni kashf eting.</h1>
+<p data-en="Local-first travel guides for ancient cities, mountain escapes, desert landscapes and places beyond the usual route." data-uz="Qadimiy shaharlar, tog‘ manzaralari, cho‘l kengliklari va odatiy yo‘nalishlardan tashqaridagi maskanlar uchun sayohat qo‘llanmalari.">Qadimiy shaharlar, tog‘ manzaralari, cho‘l kengliklari va odatiy yo‘nalishlardan tashqaridagi maskanlar uchun sayohat qo‘llanmalari.</p>
+<div class="searchrow"><input id="search" type="search" placeholder="Joy yoki hududni qidiring..." aria-label="Search destinations"><button id="searchBtn" data-en="Find places" data-uz="Joylarni topish">Joylarni topish</button></div>
+<div class="herofoot"><span data-en="14 regions and Tashkent city" data-uz="14 hudud va Toshkent shahri">14 hudud va Toshkent shahri</span><span data-en="Practical trip-planning notes" data-uz="Safar uchun amaliy maslahatlar">Safar uchun amaliy maslahatlar</span><span data-en="Free to explore" data-uz="Bepul foydalaning">Bepul foydalaning</span></div>
+</div></section>
+<section id="explore"><div class="wrap">
+<div class="sectionhead"><div><div class="eyebrow" data-en="Destination guides" data-uz="Sayohat qo‘llanmalari">Sayohat qo‘llanmalari</div><h2 data-en="Plan your next discovery" data-uz="Keyingi sayohatingizni rejalang">Keyingi sayohatingizni rejalang</h2></div><p data-en="Open a guide for a quick overview, practical planning notes and a direct map search. Details such as transport and access can change—confirm before leaving." data-uz="Qisqa tavsif, amaliy rejalashtirish maslahatlari va xaritani ochish uchun qo‘llanmani tanlang. Transport va kirish shartlari o‘zgarishi mumkin — yo‘lga chiqishdan oldin tekshiring.">Qisqa tavsif, amaliy rejalashtirish maslahatlari va xaritani ochish uchun qo‘llanmani tanlang. Transport va kirish shartlari o‘zgarishi mumkin — yo‘lga chiqishdan oldin tekshiring.</p></div>
+<div class="chips" id="filters">
+<button class="chip active" data-filter="all" data-en="All places" data-uz="Barcha joylar">Barcha joylar</button><button class="chip" data-filter="nature" data-en="Nature" data-uz="Tabiat">Tabiat</button><button class="chip" data-filter="history" data-en="History" data-uz="Tarix">Tarix</button><button class="chip" data-filter="city" data-en="City & culture" data-uz="Shahar va madaniyat">Shahar va madaniyat</button><button class="chip" data-filter="adventure" data-en="Adventure" data-uz="Sarguzasht">Sarguzasht</button>
+</div>
+<div class="grid" id="places">
+<p class="catalog-loading" id="placesLoading">Joylar yuklanmoqda… / Loading destinations…</p>
+</div>
+<p class="notice" data-en="Planning note: travel times, opening hours, access, prices and seasonal conditions are not live-verified. Confirm them with official sources or local hosts before travelling. Photos load from external Unsplash URLs and may be replaced with licensed local photography." data-uz="Rejalashtirish eslatmasi: yo‘l vaqti, ish vaqti, kirish shartlari, narxlar va mavsumiy holat real vaqt rejimida tekshirilmaydi. Safardan oldin rasmiy manbalar yoki mahalliy mezbonlar bilan aniqlashtiring. Rasmlar tashqi Unsplash havolalaridan yuklanadi.">Rejalashtirish eslatmasi: yo‘l vaqti, ish vaqti, kirish shartlari, narxlar va mavsumiy holat real vaqt rejimida tekshirilmaydi. Safardan oldin rasmiy manbalar yoki mahalliy mezbonlar bilan aniqlashtiring. Rasmlar tashqi Unsplash havolalaridan yuklanadi.</p>
+</div></section>
+
+
+<section id="regions"><div class="wrap"><div class="sectionhead"><div><div class="eyebrow" data-en="Browse by region" data-uz="Hudud bo‘yicha ko‘rish">Hudud bo‘yicha ko‘rish</div><h2 data-en="All of Uzbekistan" data-uz="Butun O‘zbekiston">Butun O‘zbekiston</h2></div><p data-en="We’ll expand this collection region by region as practical details are reviewed." data-uz="Amaliy ma’lumotlar tekshirilgani sari qo‘llanmalarni hududma-hudud kengaytiramiz.">Amaliy ma’lumotlar tekshirilgani sari qo‘llanmalarni hududma-hudud kengaytiramiz.</p></div>
+<div class="regions"><a class="region" href="#explore">Qoraqalpog‘iston</a><a class="region" href="#explore">Andijon</a><a class="region" href="#explore">Buxoro</a><a class="region" href="#explore">Farg‘ona</a><a class="region" href="#explore">Jizzax</a><a class="region" href="#explore">Xorazm</a><a class="region" href="#explore">Namangan</a><a class="region" href="#explore">Navoiy</a><a class="region" href="#explore">Qashqadaryo</a><a class="region" href="#explore">Samarqand</a><a class="region" href="#explore">Sirdaryo</a><a class="region" href="#explore">Surxondaryo</a><a class="region" href="#explore">Toshkent viloyati</a><a class="region" href="#explore">Toshkent shahri</a></div>
+</div></section>
+<section id="about"><div class="wrap">
+<div class="sectionhead"><div><div class="eyebrow" data-en="Community-powered discovery" data-uz="Hamjamiyat bilan kashf etish">Hamjamiyat bilan kashf etish</div><h2 data-en="Suggest a hidden place" data-uz="Yashirin maskan taklif qiling">Yashirin maskan taklif qiling</h2></div><p data-en="Some of the best places are known only by locals. Help us discover them." data-uz="Eng ajoyib maskanlarning ayrimlarini faqat mahalliy aholi biladi. Ularni birga kashf qilaylik.">Eng ajoyib maskanlarning ayrimlarini faqat mahalliy aholi biladi. Ularni birga kashf qilaylik.</p></div>
+<div class="suggest-layout">
+<aside class="suggest-note"><div><div class="suggest-mark">✳</div><p class="suggest-small" data-en="A little local knowledge goes a long way" data-uz="Mahalliy bilim katta ahamiyatga ega">Mahalliy bilim katta ahamiyatga ega</p><h3 data-en="Know a place worth sharing?" data-uz="Boshqalar ham bilishi kerak bo‘lgan joyni bilasizmi?">Boshqalar ham bilishi kerak bo‘lgan joyni bilasizmi?</h3><p data-en="A quiet lakeside, a mountain trail, a family-run teahouse or a forgotten historic corner — tell us what makes it special." data-uz="Sokin ko‘l bo‘yi, tog‘ yo‘li, oilaviy choyxona yoki unutilgan tarixiy maskan — uning nimasi bilan alohida ekanini bizga ayting.">Sokin ko‘l bo‘yi, tog‘ yo‘li, oilaviy choyxona yoki unutilgan tarixiy maskan — uning nimasi bilan alohida ekanini bizga ayting.</p></div><p class="suggest-small" data-en="Every suggestion is reviewed before publication." data-uz="Har bir taklif e’lon qilinishidan oldin tekshiriladi.">Har bir taklif e’lon qilinishidan oldin tekshiriladi.</p></aside>
+<form class="suggest-form" id="placeSuggestionForm">
+<div class="form-grid">
+<div class="field"><label for="placeName" data-en="Place name" data-uz="Maskan nomi">Maskan nomi <span>*</span></label><input id="placeName" name="placeName" required maxlength="120" placeholder="e.g. Sarmishsay" data-en-placeholder="e.g. Sarmishsay" data-uz-placeholder="Masalan, Sarmishsoy"></div>
+<div class="field"><label for="region" data-en="Region / district" data-uz="Viloyat / tuman">Viloyat / tuman <span>*</span></label><input id="region" name="region" required maxlength="120" placeholder="e.g. Navoiy" data-en-placeholder="e.g. Navoi" data-uz-placeholder="Masalan, Navoiy"></div>
+<div class="field full"><label for="mapLink" data-en="Google Maps link or location" data-uz="Google Maps havolasi yoki manzil">Google Maps havolasi yoki manzil <span>*</span></label><input id="mapLink" name="mapLink" required maxlength="500" placeholder="Paste a map link or describe the location" data-en-placeholder="Paste a map link or describe the location" data-uz-placeholder="Xarita havolasini yoki manzilni yozing"></div>
+<div class="field full"><label for="whyVisit" data-en="What makes it special?" data-uz="Bu maskanning nimasi o‘ziga xos?">Bu maskanning nimasi o‘ziga xos? <span>*</span></label><textarea id="whyVisit" name="whyVisit" required maxlength="2000" placeholder="What should visitors know before going?" data-en-placeholder="What should visitors know before going?" data-uz-placeholder="Borishdan oldin sayohatchilar nimalarni bilishi kerak?"></textarea></div>
+<div class="field"><label for="bestTime" data-en="Best time to visit" data-uz="Borish uchun eng yaxshi vaqt">Borish uchun eng yaxshi vaqt</label><select id="bestTime" name="bestTime"><option value="">Choose / Tanlang</option><option>Spring / Bahor</option><option>Summer / Yoz</option><option>Autumn / Kuz</option><option>Winter / Qish</option><option>All year / Yil davomida</option><option>Not sure / Aniq emas</option></select></div>
+<div class="field"><label for="photoLink" data-en="Photo link (optional)" data-uz="Surat havolasi (ixtiyoriy)">Surat havolasi (ixtiyoriy)</label><input id="photoLink" name="photoLink" type="url" maxlength="500" placeholder="https://..."></div>
+</div>
+<div class="form-foot"><small data-en="Your suggestion won’t appear instantly. Please share accurate details and only link photos you have permission to share." data-uz="Taklifingiz darhol e’lon qilinmaydi. Aniq ma’lumot yuboring va faqat ulashishga ruxsatingiz bor suratlarni ko‘rsating.">Taklifingiz darhol e’lon qilinmaydi. Aniq ma’lumot yuboring va faqat ulashishga ruxsatingiz bor suratlarni ko‘rsating.</small><button class="form-submit" id="submitSuggestion" type="submit" data-en="Send suggestion ↗" data-uz="Taklifni yuborish ↗">Taklifni yuborish ↗</button></div>
+<div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+</form>
+</div>
+<p class="notice" data-en="Submissions are sent to the project owner for review and are never published automatically." data-uz="Takliflar ko‘rib chiqish uchun loyiha egasiga yuboriladi va avtomatik tarzda e’lon qilinmaydi.">Takliflar ko‘rib chiqish uchun loyiha egasiga yuboriladi va avtomatik tarzda e’lon qilinmaydi.</p>
+</div></section>
+</main>
+<footer><div class="wrap footerinner"><span>© <span id="year"></span> YASHIRIN.UZ</span><span data-en="Discover the places most people miss." data-uz="Ko‘pchilik bilmaydigan joylarni kashf eting.">Ko‘pchilik bilmaydigan joylarni kashf eting.</span></div></footer>
+<dialog id="guideDialog" aria-labelledby="guideTitle"><div class="guide-head"><div class="eyebrow" data-en="Destination guide" data-uz="Sayohat qo‘llanmasi">Sayohat qo‘llanmasi</div><h2 id="guideTitle"></h2><p id="guideIntro"></p></div><div class="guide-content"><div class="guide-facts" id="guideFacts"></div><h3 data-en="What to do" data-uz="Nimalar qilish mumkin">Nimalar qilish mumkin</h3><ul id="guideThings"></ul><h3 data-en="Before you go" data-uz="Yo‘lga chiqishdan oldin">Yo‘lga chiqishdan oldin</h3><p id="guideTips"></p><div class="guide-actions"><a id="guideMap" class="button" href="#" target="_blank" rel="noopener">Open map ↗</a><a id="guideSearch" class="button secondary" href="#" target="_blank" rel="noopener">Search official info ↗</a></div></div><div class="close-row"><button class="secondary" id="closeGuide" data-en="Close" data-uz="Yopish">Yopish</button></div></dialog>
+<script>
+const guides={
+chorvoq:{title:"Chorvoq va Chimgan",region:"Toshkent viloyati",seasonUz:"Bahor, yoz va kuz; qishda sharoitni tekshiring",seasonEn:"Spring, summer and autumn; check winter conditions",duration:"1 kun yoki dam olish kuni / 1 day or weekend",transportUz:"Toshkentdan avtomobil yoki oldindan kelishilgan transfer; jamoat transporti jadvalini tekshiring.",transportEn:"Car or pre-arranged transfer from Tashkent; check public transport schedules.",budgetUz:"Xarajat transport, ovqat va tanlangan faoliyatga bog‘liq; narxlarni oldindan aniqlang.",budgetEn:"Costs depend on transport, food and activities; confirm prices in advance.",thingsUz:["Suv ombori atrofidagi manzaralarni tomosha qiling.","Tog‘li hududda faqat belgilangan va xavfsiz yo‘llardan foydalaning.","Faoliyatlar va dam olish maskanlari uchun amaldagi qoidalarni tekshiring."],thingsEn:["Enjoy viewpoints around the reservoir.","Use marked, safe routes in mountain areas.","Check current rules for activities and recreation areas."],tipsUz:"Dam olish kunlari tirbandlik bo‘lishi mumkin. Ob-havoni tekshiring, suv olib yuring va noma’lum tog‘ yo‘llariga yolg‘iz chiqmang.",tipsEn:"Weekend traffic can be heavy. Check the weather, carry water and avoid unfamiliar mountain routes alone.",map:"Charvak Reservoir Chimgan Uzbekistan",query:"official tourism Charvak Chimgan Uzbekistan"},
+khiva:{title:"Xiva — Ichan qal’a",region:"Xorazm",seasonUz:"Bahor va kuz odatda sayr uchun qulayroq; yozda issiq bo‘lishi mumkin.",seasonEn:"Spring and autumn are often more comfortable for walking; summers can be hot.",duration:"1–2 kun / 1–2 days",transportUz:"Xiva yoki Urganchga yetib borish yo‘llarini solishtiring; oxirgi transferni oldindan rejalang.",transportEn:"Compare routes to Khiva or Urgench and plan the final transfer ahead.",budgetUz:"Kirish chiptalari, muzeylar va tunash xarajatlarini rasmiy manbadan tekshiring.",budgetEn:"Check official prices for entry tickets, museums and accommodation.",thingsUz:["Ichan qal’a ichidagi tarixiy ko‘chalarni piyoda aylaning.","Muzey va yodgorliklarning ish vaqtini tekshiring.","Mahalliy hunarmandchilik bilan tanishing."],thingsEn:["Walk the historic lanes inside Itchan Kala.","Check museum and monument opening hours.","Explore local crafts."],tipsUz:"Kunduzi quyoshdan himoyalaning va ichimlik suvi olib yuring. Ayrim joylarda alohida chipta talab qilinishi mumkin.",tipsEn:"Protect yourself from the sun and carry drinking water. Some sites may require separate tickets.",map:"Itchan Kala Khiva Uzbekistan",query:"official Khiva tourism Itchan Kala opening hours"},
+samarkand:{title:"Samarqand",region:"Samarqand",seasonUz:"Bahor va kuz ko‘p sayr qilish uchun qulay; yozda issiq bo‘lishi mumkin.",seasonEn:"Spring and autumn are often comfortable for walking; summer can be hot.",duration:"2–3 kun / 2–3 days",transportUz:"Poyezd va avtomobil yo‘nalishlarini rasmiy jadvaldan tekshiring; shahar ichidagi transportni oldindan ko‘rib chiqing.",transportEn:"Check official train and road schedules and plan local transport.",budgetUz:"Chipta, muzey, ovqat va tunash xarajatlari tanlovingizga qarab o‘zgaradi.",budgetEn:"Ticket, museum, food and accommodation costs vary by choice.",thingsUz:["Registon maydoni va tarixiy majmualarni ko‘ring.","Shahar bozorlarida mahalliy taom va hunarmandchilik bilan tanishing.","Tashrif vaqti va chiptalarni rasmiy manbalardan tekshiring."],thingsEn:["Visit Registan Square and historic complexes.","Explore local food and crafts in city markets.","Verify visiting hours and tickets with official sources."],tipsUz:"Mashhur joylarda gavjum vaqtlarni hisobga oling. Muqaddas joylarda kiyinish va suratga olish qoidalariga rioya qiling.",tipsEn:"Expect crowds at popular sights. Follow dress and photography rules at religious sites.",map:"Registan Samarkand Uzbekistan",query:"official Samarkand tourism Registan tickets"},
+zaamin:{title:"Zomin milliy bog‘i",region:"Jizzax",seasonUz:"Bahor oxiri va yozda ob-havoni tekshirib boring; qishda yo‘l sharoiti o‘zgarishi mumkin.",seasonEn:"Check conditions in late spring and summer; winter roads may be affected.",duration:"Dam olish kuni / Weekend",transportUz:"Safardan oldin transport va bog‘ hududiga kirish tartibini aniqlang.",transportEn:"Confirm transport and park access rules before travelling.",budgetUz:"Transport, tunash va faoliyat narxlari mavsumga qarab o‘zgaradi.",budgetEn:"Transport, lodging and activity costs vary by season.",thingsUz:["Tabiat manzaralarini tomosha qiling.","Faqat ruxsat etilgan yo‘llardan yuring va chiqindi qoldirmang.","Mahalliy ob-havo va yo‘l xabarlarini tekshiring."],thingsEn:["Enjoy the natural scenery.","Stay on permitted routes and leave no litter.","Check local weather and road updates."],tipsUz:"Tog‘ sharoitida ob-havo tez o‘zgarishi mumkin. Mos kiyim, suv va to‘liq quvvatlangan telefon oling.",tipsEn:"Mountain weather can change quickly. Bring suitable clothing, water and a charged phone.",map:"Zaamin National Park Uzbekistan",query:"official Zaamin National Park Uzbekistan access"},
+bukhara:{title:"Buxoro eski shahri",region:"Buxoro",seasonUz:"Bahor va kuz piyoda sayr uchun qulayroq bo‘lishi mumkin.",seasonEn:"Spring and autumn can be more comfortable for walking.",duration:"2 kun / 2 days",transportUz:"Shaharga poyezd yoki avtomobil bilan borish variantlarini tekshiring; eski shaharda ko‘p joylarni piyoda ko‘rish mumkin.",transportEn:"Check train or road options; many old-town sights can be explored on foot.",budgetUz:"Muzeylar, ekskursiya, ovqat va tunash narxlarini safardan oldin tekshiring.",budgetEn:"Check museum, tour, food and accommodation prices before travelling.",thingsUz:["Labi Hovuz va tarixiy majmualarni aylaning.","Mahalliy hunarmandchilik do‘konlarini ko‘ring.","Tarixiy binolarga kirish qoidalarini hurmat qiling."],thingsEn:["Explore Lyabi-Hauz and historic complexes.","Browse local craft shops.","Respect access rules at historic buildings."],tipsUz:"Eski shaharning ayrim ko‘chalari notekis bo‘lishi mumkin; qulay oyoq kiyim kiying.",tipsEn:"Some old-town streets are uneven; wear comfortable walking shoes.",map:"Lyabi Hauz Bukhara Uzbekistan",query:"official Bukhara tourism opening hours"},
+moynaq:{title:"Mo‘ynoq va Orolbo‘yi",region:"Qoraqalpog‘iston",seasonUz:"Bahor va kuzda ob-havo nisbatan yumshoq bo‘lishi mumkin; yozda kuchli issiq ehtimoli bor.",seasonEn:"Spring and autumn may be milder; extreme summer heat is possible.",duration:"Oldindan rejalangan 1–2 kun / Planned 1–2 days",transportUz:"Masofa uzoq bo‘lishi mumkin. Ishonchli transport, yoqilg‘i, aloqa va tunashni oldindan rejalang.",transportEn:"Distances can be long. Arrange reliable transport, fuel, communications and lodging ahead.",budgetUz:"Transport xarajati sezilarli bo‘lishi mumkin; safar oldidan barcha xizmatlarni kelishib oling.",budgetEn:"Transport can be a significant cost; agree on services before departure.",thingsUz:["Mo‘ynoq tarixi va Orol dengizi haqida ma’lumot oling.","Mahalliy yo‘riqchi va ruxsat etilgan tashrif joylarini oldindan aniqlang.","Atrof-muhitga ehtiyotkor munosabatda bo‘ling."],thingsEn:["Learn about Muynak and the history of the Aral Sea.","Arrange local guidance and permitted visit areas in advance.","Treat the fragile environment with care."],tipsUz:"Chekka hududlarga borishda mahalliy maslahat muhim. Ob-havo, yo‘l holati va aloqa imkoniyatlarini safardan oldin tekshiring.",tipsEn:"Local advice is important in remote areas. Check weather, road conditions and mobile coverage before departure.",map:"Muynak Ship Cemetery Uzbekistan",query:"official Karakalpakstan tourism Muynak Aral Sea travel"},
+shahrisabz:{title:"Shahrisabz",region:"Qashqadaryo",seasonUz:"Bahor va kuz piyoda sayr uchun qulayroq bo‘lishi mumkin.",seasonEn:"Spring and autumn can be more comfortable for walking.",duration:"Bir kun / 1 day",transportUz:"Samarqand yoki Qarshidan yo‘l variantlarini tekshiring; tog‘ yo‘nalishlarida sharoitni aniqlang.",transportEn:"Check routes from Samarkand or Qarshi and confirm conditions on mountain roads.",budgetUz:"Transport va yodgorliklar chiptalari uchun amaldagi narxlarni tekshiring.",budgetEn:"Check current transport and monument ticket prices.",thingsUz:["Oqsaroy majmuasi qoldiqlarini ko‘ring.","Tarixiy markaz bo‘ylab piyoda yuring.","Yodgorliklar holati va kirish qoidalarini tekshiring."],thingsEn:["See the remains of the Ak-Saray complex.","Walk through the historic centre.","Check monument access and visitor rules."],tipsUz:"Ayrim obidalar restavratsiya yoki tashrif cheklovlariga ega bo‘lishi mumkin.",tipsEn:"Some monuments may have restoration work or visitor restrictions.",map:"Ak Saray Palace Shahrisabz Uzbekistan",query:"official Shahrisabz tourism Ak Saray"},
+sentob:{title:"Sentob qishlog‘i",region:"Navoiy",seasonUz:"Bahor va kuz ko‘pincha qulayroq; borishdan oldin ob-havoni tekshiring.",seasonEn:"Spring and autumn are often more comfortable; check the forecast.",duration:"1–2 kun / 1–2 days",transportUz:"Yo‘l va oxirgi masofadagi transportni oldindan kelishib oling; tunash uchun mezbon bilan bog‘laning.",transportEn:"Arrange the road and last-mile transport in advance; contact a host for lodging.",budgetUz:"Narxlar tunash va kelishilgan xizmatlarga bog‘liq; mezbon bilan oldindan kelishing.",budgetEn:"Costs depend on lodging and agreed services; confirm with your host.",thingsUz:["Qishloq bo‘ylab sayr qiling va mahalliy hayot bilan tanishing.","Piyoda yo‘llar uchun mahalliy maslahat oling.","Mahalliy odatlar va xususiy mulkni hurmat qiling."],thingsEn:["Walk through the village and learn about local life.","Ask locally about walking routes.","Respect local customs and private property."],tipsUz:"Chekka qishloqlarda xizmatlar cheklangan bo‘lishi mumkin. Naqd pul, suv va kerakli buyumlarni oldindan tayyorlang.",tipsEn:"Services may be limited in remote villages. Prepare cash, water and essentials in advance.",map:"Sentob Village Uzbekistan",query:"Sentob village official tourism Uzbekistan"},
+boysun:{title:"Boysun",region:"Surxondaryo",seasonUz:"Bahor va kuzda sayr qilish qulayroq bo‘lishi mumkin.",seasonEn:"Spring and autumn may be more comfortable for exploring.",duration:"1–2 kun / 1–2 days",transportUz:"Safardan oldin yo‘l holati va mahalliy transportni tekshiring.",transportEn:"Check road conditions and local transport before leaving.",budgetUz:"Transport, tunash va mahalliy xizmatlar narxlarini oldindan aniqlang.",budgetEn:"Confirm transport, lodging and local service costs ahead of time.",thingsUz:["Tog‘ manzaralari va mahalliy madaniy meros bilan tanishing.","Mahalliy tadbirlar sanasini oldindan tekshiring.","Tabiiy hududlarda belgilangan yo‘llarga rioya qiling."],thingsEn:["Explore mountain scenery and local cultural heritage.","Check dates for local events in advance.","Follow marked routes in natural areas."],tipsUz:"Tadbirlar har yili bir xil vaqtda bo‘lmasligi mumkin. Safar sanasini rasmiy yoki mahalliy manbadan tasdiqlang.",tipsEn:"Events may not occur on the same dates every year. Confirm dates with official or local sources.",map:"Boysun Uzbekistan",query:"official Boysun tourism events Uzbekistan"}
+};
+const dialog=document.getElementById("guideDialog");let language="uz";
+function t(uz,en){return language==="uz"?uz:en}
+function openGuide(key){const g=guides[key];if(!g)return;document.getElementById("guideTitle").textContent=g.title;document.getElementById("guideIntro").textContent=language==="uz"?"Hudud: "+g.region+" — safarni rejalashtirish uchun qisqa qo‘llanma.":"Region: "+g.region+" — a quick guide to help plan your visit.";
+const facts=[["Eng qulay vaqt",g.seasonUz,g.seasonEn],["Tavsiya etilgan vaqt",g.duration,g.duration],["Qanday borish",g.transportUz,g.transportEn],["Xarajatlar",g.budgetUz,g.budgetEn]];
+document.getElementById("guideFacts").innerHTML=facts.map(f=>`<div class="fact"><small>${f[0] instanceof String?f[0]:f[0]}</small><div>${language==="uz"?f[1]:f[2]}</div></div>`).join("");
+document.getElementById("guideThings").innerHTML=(language==="uz"?g.thingsUz:g.thingsEn).map(x=>`<li>${x}</li>`).join("");document.getElementById("guideTips").textContent=language==="uz"?g.tipsUz:g.tipsEn;
+document.getElementById("guideMap").href="https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(g.map);document.getElementById("guideMap").textContent=language==="uz"?"Xaritani ochish ↗":"Open map ↗";document.getElementById("guideSearch").href="https://www.google.com/search?q="+encodeURIComponent(g.query);document.getElementById("guideSearch").textContent=language==="uz"?"Rasmiy ma’lumot qidirish ↗":"Search official info ↗";dialog.showModal()}
+document.querySelectorAll(".guide-btn").forEach(b=>b.addEventListener("click",()=>openGuide(b.dataset.guide)));
+document.getElementById("closeGuide").addEventListener("click",()=>dialog.close());dialog.addEventListener("click",e=>{if(e.target===dialog)dialog.close()});
+let activeFilter="all";function applyFilters(){const q=document.getElementById("search").value.trim().toLocaleLowerCase();let shown=0;document.querySelectorAll(".place").forEach(card=>{const categories=card.dataset.category.split(" ");const matchFilter=activeFilter==="all"||categories.includes(activeFilter);const matchSearch=!q||(card.dataset.search+" "+card.innerText).toLocaleLowerCase().includes(q);card.hidden=!(matchFilter&&matchSearch);if(!card.hidden)shown++});let msg=document.getElementById("noResults");if(!shown){if(!msg){msg=document.createElement("p");msg.id="noResults";msg.className="notice";document.getElementById("places").after(msg)}msg.textContent=language==="uz"?"Mos joy topilmadi. Boshqa so‘z yoki hududni qidiring.":"No places found. Try another search or region."}else if(msg)msg.remove()}
+document.querySelectorAll(".chip").forEach(b=>b.addEventListener("click",()=>{document.querySelectorAll(".chip").forEach(x=>x.classList.remove("active"));b.classList.add("active");activeFilter=b.dataset.filter;applyFilters()}));
+document.getElementById("searchBtn").addEventListener("click",()=>{applyFilters();document.getElementById("explore").scrollIntoView({behavior:"smooth"})});document.getElementById("search").addEventListener("input",applyFilters);document.getElementById("search").addEventListener("keydown",e=>{if(e.key==="Enter"){applyFilters();document.getElementById("explore").scrollIntoView({behavior:"smooth"})}});
+document.getElementById("language").addEventListener("change",e=>{language=e.target.value;document.documentElement.lang=language;document.querySelectorAll("[data-"+language+"]").forEach(el=>{el.textContent=el.getAttribute("data-"+language)});document.getElementById("search").placeholder=language==="uz"?"Joy yoki hududni qidiring...":"Search a place or region...";
+document.querySelectorAll("[data-"+language+"-placeholder]").forEach(el=>el.placeholder=el.getAttribute("data-"+language+"-placeholder"));
+document.getElementById("submitSuggestion").textContent=language==="uz"?"Taklifni yuborish ↗":"Send suggestion ↗";applyFilters();if(dialog.open){const active=document.getElementById("guideTitle").textContent;const key=Object.keys(guides).find(k=>guides[k].title===active);if(key)openGuide(key)}});
+const APPS_SCRIPT_URL="https://script.google.com/macros/s/AKfycbx3WhnL55HOLUIUNqa9FkxIzbUD4AzzidBDA10MfEJadgtMYepY2m8u3WQTkv3lXUV7/exec";
+const suggestionForm=document.getElementById("placeSuggestionForm");
+suggestionForm.addEventListener("submit",async e=>{
+ e.preventDefault();
+ const status=document.getElementById("formStatus"),submit=document.getElementById("submitSuggestion");
+ if(APPS_SCRIPT_URL.startsWith("PASTE_")){
+  status.className="form-status show error";
+  status.textContent=language==="uz"?"Forma ko‘rinishi tayyor, lekin yuborishni yoqish uchun bepul Google Apps Script ulanishi hali sozlanmagan. README yo‘riqnomasiga qarang.":"The form design is ready, but submissions are not connected yet. Follow the included README to connect the free Google Apps Script endpoint.";
+  return;
+ }
+ if(!suggestionForm.reportValidity())return;
+ const payload=Object.fromEntries(new FormData(suggestionForm).entries());
+ payload.language=language;payload.page="YASHIRIN.UZ";
+ submit.disabled=true;submit.textContent=language==="uz"?"Yuborilmoqda…":"Sending…";
+ status.className="form-status show";status.textContent=language==="uz"?"Taklif yuborilmoqda…":"Sending your suggestion…";
+ try{
+  await fetch(APPS_SCRIPT_URL,{method:"POST",mode:"no-cors",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify(payload)});
+  suggestionForm.reset();status.className="form-status show success";
+  status.textContent=language==="uz"?"Rahmat! Taklifingiz yuborildi. Saytga qo‘shishdan oldin uni tekshiramiz.":"Thank you! Your suggestion has been sent for review.";
+ }catch(err){
+  status.className="form-status show error";status.textContent=language==="uz"?"Yuborilmadi. Internetni tekshirib, qayta urinib ko‘ring.":"Could not send. Check your connection and try again.";
+ }finally{submit.disabled=false;submit.textContent=language==="uz"?"Taklifni yuborish ↗":"Send suggestion ↗"}
+});
+
+// Load approved destination catalog + approved talent profiles from the Apps Script backend.
+(function(){
+ const endpoint=APPS_SCRIPT_URL;
+ function safeHttps(value){try{const u=new URL(String(value||''));return u.protocol==='https:'?u.href:''}catch(_){return ''}}
+ function textNode(tag,value,className){const el=document.createElement(tag);if(className)el.className=className;el.textContent=String(value||'');return el}
+ function addLink(parent,label,url,cls){const href=safeHttps(url);if(!href)return;const a=textNode('a',label,'button '+(cls||'secondary'));a.href=href;a.target='_blank';a.rel='noopener noreferrer';parent.appendChild(a)}
+ window.yashirinCatalogCallback=function(result){
+  if(!result||result.ok===false)return;
+  const grid=document.getElementById('places');
+  if(grid&&Array.isArray(result.places)){const loading=document.getElementById('placesLoading');if(loading)loading.remove();grid.replaceChildren();result.places.forEach(p=>{
+   if(!p||!p.nameUz||grid.querySelector('[data-catalog-id="'+CSS.escape(String(p.id||''))+'"]'))return;
+   const card=document.createElement('article');card.className='place community-place';card.dataset.catalogId=String(p.id||'');card.dataset.category=String(p.category||'community').toLowerCase();card.dataset.search=[p.nameUz,p.nameEn,p.region,p.descriptionUz,p.descriptionEn].join(' ').toLocaleLowerCase();
+   const photo=document.createElement('div');photo.className='photo';const imgUrl=safeHttps(p.photoLink);if(imgUrl){const im=document.createElement('img');im.loading='lazy';im.src=imgUrl;im.alt=p.nameUz;im.onerror=()=>im.remove();photo.appendChild(im)}
+   photo.appendChild(textNode('span',language==='uz'?'Tavsiya etilgan':'Featured','tag'));
+   const body=document.createElement('div');body.className='placebody';body.appendChild(textNode('h3',language==='uz'?p.nameUz:(p.nameEn||p.nameUz)));body.appendChild(textNode('p',language==='uz'?(p.descriptionUz||''):(p.descriptionEn||p.descriptionUz||'')));
+   const meta=document.createElement('div');meta.className='meta';meta.appendChild(textNode('span','📍 '+(p.region||'O‘zbekiston')));if(p.bestTime)meta.appendChild(textNode('span',p.bestTime));body.appendChild(meta);
+   const actions=document.createElement('div');actions.className='card-actions';addLink(actions,language==='uz'?'Xaritada ↗':'Open map ↗',p.mapLink,'secondary');body.appendChild(actions);card.append(photo,body);grid.appendChild(card);
+  });}
+  if(grid&&typeof applyFilters==='function')applyFilters();
+ };
+ window.yashirinTalentsCallback=function(result){
+  const grid=document.getElementById('talentsGrid');if(!grid)return;grid.replaceChildren();
+  const talents=result&&Array.isArray(result.talents)?result.talents:[];
+  if(!talents.length){grid.appendChild(textNode('p',language==='uz'?'Hozircha e’lon qilingan iste’dodlar yo‘q. Yangi profillar tez orada qo‘shiladi.':'No talent profiles have been published yet. Check back soon.','catalog-empty'));return}
+  talents.forEach(t=>{const card=document.createElement('article');card.className='place talent-card';const photo=document.createElement('div');photo.className='photo';const imgUrl=safeHttps(t.photoLink);if(imgUrl){const im=document.createElement('img');im.loading='lazy';im.src=imgUrl;im.alt=t.name||'Talent profile';im.onerror=()=>im.remove();photo.appendChild(im)}photo.appendChild(textNode('span',t.region||'Uzbekistan','tag'));
+   const body=document.createElement('div');body.className='placebody';body.appendChild(textNode('h3',t.name));body.appendChild(textNode('span',t.skill,'skill-pill'));body.appendChild(textNode('p',t.bio||''));const actions=document.createElement('div');actions.className='card-actions';addLink(actions,language==='uz'?'Portfolio ↗':'Portfolio ↗',t.portfolioLink,'secondary');addLink(actions,language==='uz'?'Bog‘lanish ↗':'Contact ↗',t.contactLink,'');body.appendChild(actions);card.append(photo,body);grid.appendChild(card);
+  });
+ };
+ function loadJsonp(action,callback){const s=document.createElement('script');s.src=endpoint+'?action='+encodeURIComponent(action)+'&callback='+encodeURIComponent(callback)+'&ts='+Date.now();s.onerror=()=>{if(action==='approved'){const g=document.getElementById('places');if(g)g.replaceChildren(textNode('p',language==='uz'?'Joylar yuklanmadi. Apps Script backendini yangilang.':'Destinations could not load. Update the Apps Script backend.','catalog-empty'))}if(action==='approvedTalents'){const g=document.getElementById('talentsGrid');if(g)g.replaceChildren(textNode('p',language==='uz'?'Iste’dodlar ro‘yxatini yuklab bo‘lmadi.':'Could not load talent profiles.','catalog-empty'))}};document.head.appendChild(s)}
+ loadJsonp('approved','yashirinCatalogCallback');loadJsonp('approvedTalents','yashirinTalentsCallback');
+})();
+
+document.getElementById("year").textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
